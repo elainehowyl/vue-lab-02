@@ -1,9 +1,9 @@
 <template>
   <div>
       <div class="row">
-          <Box v-bind:bgColor="box1Color" content="1" v-on:reset_backgroundcolor='resetBox1'></Box>
-          <Box v-bind:bgColor="box2Color" content="2" v-on:reset_backgroundcolor='resetBox2'></Box>
-          <Box v-bind:bgColor="box3Color" content="3" v-on:reset_backgroundcolor='resetBox3'></Box>
+          <Box v-bind:bgColor="box1Color" content="1" v-on:reset_backgroundcolor="resetBox1"></Box>
+          <Box v-bind:bgColor="box2Color" content="2" v-on:reset_backgroundcolor="resetBox2"></Box>
+          <Box v-bind:bgColor="box3Color" content="3" v-on:reset_backgroundcolor="resetBox3"></Box>
       </div>
       <h1>Select box color</h1>
       <div>
@@ -46,13 +46,13 @@ export default {
         }
     },
     methods:{
-        'resetBox1':function(){
+        resetBox1:function(){
             this.box1Color='white'
         },
-        'resetBox2':function(){
+        resetBox2:function(){
             this.box2Color='white'
         },
-        'resetBox3':function(){
+        resetBox3:function(){
             this.box3Color='white'
         }
     }

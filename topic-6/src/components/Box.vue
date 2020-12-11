@@ -1,7 +1,7 @@
 <template>
   <div v-bind:style="{backgroundColor:bgColor}" class="boxes">
         {{content}}
-        <button v-bind:click="reset">Reset</button>
+        <button v-on:click="reset">Reset</button>
   </div>
 </template>
 <script>
@@ -13,8 +13,8 @@ export default {
     },
     props:['bgColor','content'],
     methods:{
-        'reset':function(){
-           this.$emit('reset_backgroundcolor')
+        reset:function(){
+           this.$emit('reset_backgroundcolor');
         }
     }
 }
