@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <ControlPanel></ControlPanel>
+    <MainCounter></MainCounter>
   </div>
 </template>
 
 <script>
 import ControlPanel from "./components/ControlPanel"
+import MainCounter from "./components/MainCounter"
 
 export default {
   name: 'App',
   components: {
-    ControlPanel
+    ControlPanel, MainCounter
   }
 }
 </script>

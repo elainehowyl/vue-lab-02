@@ -1,7 +1,7 @@
 <template>
   <div v-bind:style="{backgroundColor:bgColor}" class="boxes">
         {{content}}
-        <button v-on:click="reset">Reset</button>
+        <br><button v-on:click="reset">Reset</button>
   </div>
 </template>
 <script>
