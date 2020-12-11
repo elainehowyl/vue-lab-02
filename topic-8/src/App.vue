@@ -1,19 +1,17 @@
 <template>
-  <div id="app" class="container">
-    <TodoList></TodoList>
-    <ProductList></ProductList>
+  <div id="app">
+    <TodoListAdvanced></TodoListAdvanced>
+    <ProductListAdvanced></ProductListAdvanced>
   </div>
 </template>
 
 <script>
-import TodoList from "./components/TodoList"
-import ProductList from "./components/ProductList"
-
-
+import TodoListAdvanced from "./components/TodoListAdvanced"
+import ProductListAdvanced from "./components/ProductListAdvanced"
 export default {
   name: 'App',
   components: {
-    TodoList, ProductList
+    TodoListAdvanced, ProductListAdvanced
   }
 }
 </script>
