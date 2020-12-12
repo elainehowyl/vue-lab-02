@@ -15,10 +15,10 @@ export default {
     props:['number'],
     methods:{
         decrement:function(){
-            this.number -= 1
+            this.$emit('decrementby1')
         },
         increment:function(){
-            this.number += 1
+            this.$emit('incrementby1')
         },
         resetto0:function(){
             this.$emit('resetNumber');
